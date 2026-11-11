@@ -1,76 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio de Pedro Lopes</title>
+        <meta name="description" content="Portfólio de Pedro Henrique Albuquerque Lopes, estudante de Ciência da Computação e desenvolvedor.">
+        <meta name="theme-color" content="#101827">
+        <title>Pedro Lopes | Desenvolvedor</title>
         <link rel="stylesheet" href="style.css">
     </head>
-<body>
-    <header>
-        <img src="imgs/logo1-removebg-preview.png" alt="Logo" style="width: 420px; height: auto;">
-    </header>
-    <div class="bgfoto">
-        <div class="fotos">
-            <img src="imgs/gato1.jpg" alt="Foto 1" width="100" height="100">
-            <img src="imgs/gato2.jpg" alt="Foto 2" width="100" height="100">
-            <img src="imgs/gato3.png" alt="Foto 3" width="100" height="100">
-            <img src="imgs/gato4.jpg" alt="Foto 4" width="100" height="100">
-            <img src="imgs/gato5.jpg" alt="Foto 5" width="100" height="100">
-            <img src="imgs/gato6.jpg" alt="Foto 6" width="100" height="100">
-        </div>
-        <h2 class="identificacao">Artista / Desenvolvedor / Designer</h2>
-        <table border="2" bordercolor="#373e3f" width="100%">
-            <tr>
-                <td width="33%" height="100%">
-                    <h3 class="textoprincipal">Destaques</h3>
-                    <ul class="destaques">
-                        <li class="destaque" class="primeirogato">Modelagem 3D e 2D em pixel art</li>
-                        <li class="destaque">Design de personagens</li>
-                        <li class="destaque">Desenvolvimento de Interfaces Web</li>
-                        <li class="destaque">Desenvolvimento fullstack de jogos</li>
-                        <li class="destaque">Trabalhos criativos de vetor e design para mídias sociais</li>
-                    </ul>
-                </td>
-                <td width="33%" height="100%">
-                    <h3 class="textoprincipal">Conquistas Profissionais</h3>
-                    <p class="destaque">Vencedor da Techno Game Jam 2026 em pvh RO<br></p>
-                    <p class="destaque">Participante de diversas game jams hospedadas mundialmente, como a GJ+</p>
-                    <a href="https://www.linkedin.com/in/pedropple/">Ver meu perfil no LinkedIn</a>
-                    <h3 class="textoprincipal">Envolvimento na Comunidade</h3>
-                    <p class="destaque">Líder da comissão filatrópica da empresa jr. ATLAS T.E.C<br></p>
-                    <p class="destaque">Diversos projetos em andamento e atualizados pelo GitHub</p>
-                    <a href="https://github.com/pedropple-droid">Visite meu GitHub</a>
-                </td>
-                <td width="33%" height="100%">
-                    <h3 class="textoprincipal">Qualificações Acadêmicas</h3>
-                    <p class="destaque">Estudante da primeira turma de ciência da computação pela Universidade Afya São Lucas, atualmente 4º período.</p>
-                    <h3 class="textoprincipal">Especializações:</h3>
-                    <ul>
-                        <li class="destaque">Desenvolvedor de jogos</li>
-                        <li class="destaque">Especialização em Programação Orientada à objetos</li>
-                        <li class="destaque">Setor Criativo</li>
-                        <li class="destaque">Designer Visual</li>
-                        <li class="destaque">Artista Independente</li>
-                        <li class="destaque">Desenvolvedor de Interfaces Web</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <h3 class="textoprincipal">Mídias sociais</h3>
-        <table border="2" width="100%" height="100%">
-            <tr>
-                <td style="text-align:center;">
-                    <a href="https://www.instagram.com/artnpixel_/" target="_blank" >Instagram Artístico</a>
-                    <br></br>
-                    <a href="https://www.instagram.com/_/" target="_blank">Instagram Pessoal</a>
-                </td>
-            </tr>
-        </table>
-        <br></br>
-        <footer style="text-align:center;">
-            © [2026] Todos os direitos reservados por Pedro Lopes
+    <body>
+        <header class="site-header">
+            <nav class="navigation container" aria-label="Navegação principal">
+                <a class="brand" href="#inicio" aria-label="Pedro Lopes — início">PL<span>.</span></a>
+                <div class="nav-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#experiencia">Experiência</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#proximos">Próximos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a class="nav-contact" href="#contato">Contato</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero container" id="inicio">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> Ciência da Computação · 4º período</p>
+                    <h1>Pedro Henrique<br><span>Albuquerque Lopes</span></h1>
+                    <p class="hero-description">
+                        Estudante e desenvolvedor interessado em criar soluções úteis,
+                        de sistemas web a experiências interativas.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↗</span></a>
+                        <a class="button button-secondary" href="#contato">Entre em contato</a>
+                    </div>
+                    <div class="hero-links" aria-label="Perfis profissionais">
+                        <a href="https://github.com/pedropple-droid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.linkedin.com/in/pedropple/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Resumo profissional">
+                    <div class="card-symbol" aria-hidden="true">&lt;/&gt;</div>
+                    <p class="card-label">Em foco</p>
+                    <h2>Construindo soluções com tecnologia e propósito.</h2>
+                    <div class="card-divider"></div>
+                    <p class="card-meta">Desenvolvimento web · Java · Jogos</p>
+                </aside>
+                <a class="scroll-hint" href="#sobre"><span aria-hidden="true">↓</span> Role para explorar</a>
+            </section>
+
+            <section class="section section-light" id="sobre">
+                <div class="container about-grid">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">01 / Sobre mim</p>
+                        <h2 class="section-title">Tecnologia, criatividade<br>e colaboração.</h2>
+                    </div>
+                    <div class="about-copy">
+                        <p>
+                            Sou estudante de Ciência da Computação na Faculdade São Lucas e
+                            desenvolvedor com interesse em desenvolvimento web, programação
+                            orientada a objetos e criação de jogos. Gosto de aprender na prática
+                            e colaborar em projetos com impacto real.
+                        </p>
+                        <p>
+                            Minha trajetória também inclui experiência como instrutor de robótica
+                            e programação, onde apoiei alunos em seus processos de aprendizagem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="experiencia">
+                <div class="container">
+                    <p class="eyebrow">02 / Experiência e atuação</p>
+                    <h2 class="section-title">Projetos que movem<br>meu trabalho.</h2>
+                    <div class="experience-grid">
+                        <article class="experience-card experience-featured">
+                            <div class="experience-topline">
+                                <span class="experience-type">Em andamento</span>
+                                <span class="experience-date">Hospital Cosme e Damião</span>
+                            </div>
+                            <h3>Refatoração de banco de dados e sistema Kanban</h3>
+                            <p>
+                                Atuação no refatoramento do banco de dados e na criação de um
+                                sistema de gestão visual de tarefas em Kanban, ampliando minha
+                                experiência com Java e organização de fluxos de trabalho.
+                            </p>
+                            <div class="tag-list">
+                                <span>Java</span>
+                                <span>Banco de dados</span>
+                                <span>Kanban</span>
+                            </div>
+                        </article>
+                        <article class="experience-card">
+                            <div class="experience-topline">
+                                <span class="experience-type">Liderança</span>
+                                <span class="experience-date">ATLAS TEC</span>
+                            </div>
+                            <h3>Líder de ações filantrópicas</h3>
+                            <p>
+                                Lidero ações filantrópicas na empresa júnior da Faculdade São
+                                Lucas, contribuindo com iniciativas colaborativas e de impacto
+                                para a comunidade.
+                            </p>
+                            <div class="tag-list">
+                                <span>Voluntariado</span>
+                                <span>Liderança</span>
+                                <span>Impacto social</span>
+                            </div>
+                        </article>
+                        <article class="experience-card">
+                            <div class="experience-topline">
+                                <span class="experience-type">Experiência anterior</span>
+                                <span class="experience-date">Educação</span>
+                            </div>
+                            <h3>Instrutor de robótica e programação</h3>
+                            <p>
+                                Na Escola MyRobot, auxiliei e orientei alunos durante o
+                                aprendizado de robótica e programação, incentivando a
+                                continuidade e a autonomia nos estudos.
+                            </p>
+                            <div class="tag-list">
+                                <span>Ensino</span>
+                                <span>Robótica</span>
+                                <span>Programação</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-projects" id="projetos">
+                <div class="container">
+                    <p class="eyebrow">03 / Projetos em destaque</p>
+                    <h2 class="section-title">Trabalho em equipe,<br>soluções reais.</h2>
+                    <article class="project-card">
+                        <div class="project-number" aria-hidden="true">01</div>
+                        <div class="project-content">
+                            <p class="project-kicker">Hackathon SETIC 2026</p>
+                            <h3>Sistema de Gestão de Riscos</h3>
+                            <p>
+                                Projeto colaborativo para apoiar o fluxo de gestão de riscos,
+                                da identificação à avaliação de Planos de Resposta a Riscos
+                                (PRR). A solução combina uma API Java com uma interface web.
+                            </p>
+                            <div class="tag-list project-tags">
+                                <span>Java 21</span>
+                                <span>Spring Boot</span>
+                                <span>Spring Security</span>
+                                <span>Spring Data JPA</span>
+                                <span>PostgreSQL</span>
+                                <span>JWT</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Juan-hub134/hackathon-setic-2026" target="_blank" rel="noopener noreferrer">Repositório backend <span aria-hidden="true">↗</span></a>
+                                <a href="https://github.com/Juan-hub134/hackathon-setic-2026-frontend" target="_blank" rel="noopener noreferrer">Repositório frontend <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                        <div class="project-mark" aria-hidden="true">MGR<span>↗</span></div>
+                    </article>
+                    <article class="achievement">
+                        <div class="achievement-icon" aria-hidden="true">✦</div>
+                        <div class="achievement-copy">
+                            <p class="achievement-label">Conquista em destaque</p>
+                            <h3>1º lugar na Techno Game Jam 2026</h3>
+                            <p class="achievement-detail">Avoa Norte · Porto Velho — RO</p>
+                        </div>
+                        <a class="achievement-link" href="https://peter-jasen.itch.io/avoa-norte-technogamejam" target="_blank" rel="noopener noreferrer">
+                            Conheça o jogo <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-upcoming" id="proximos">
+                <div class="container">
+                    <p class="eyebrow">04 / Agenda</p>
+                    <h2 class="section-title">Próximos projetos<br>e desafios.</h2>
+                    <p class="upcoming-intro">Eventos de programação e desenvolvimento de jogos previstos para novembro de 2026.</p>
+                    <div class="upcoming-grid">
+                        <article class="upcoming-card">
+                            <div class="upcoming-date">
+                                <span>06—08</span>
+                                <span>NOV 2026</span>
+                            </div>
+                            <div>
+                                <p class="upcoming-type">Game jam global</p>
+                                <h3>GJ+</h3>
+                                <p>Participação prevista em uma game jam global: três dias para criar um jogo em equipe.</p>
+                            </div>
+                        </article>
+                        <article class="upcoming-card">
+                            <div class="upcoming-date">
+                                <span>12</span>
+                                <span>NOV 2026</span>
+                            </div>
+                            <div>
+                                <p class="upcoming-type">Maratona de programação</p>
+                                <h3>Maratona da UNIR</h3>
+                                <p>Desafio de programação previsto para o dia 12 de novembro, na Universidade Federal de Rondônia.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-light" id="habilidades">
+                <div class="container skills-grid">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">05 / Habilidades</p>
+                        <h2 class="section-title">Ferramentas para<br>tirar ideias do papel.</h2>
+                        <p class="skills-intro">
+                            Conhecimentos desenvolvidos nos estudos, projetos e experiências
+                            de trabalho.
+                        </p>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill-group">
+                            <h3>Desenvolvimento</h3>
+                            <div class="skill-pills">
+                                <span>Java</span><span>HTML</span><span>CSS</span>
+                                <span>JavaScript</span><span>Python</span><span>C#</span>
+                                <span>Programação orientada a objetos</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Tecnologias e métodos</h3>
+                            <div class="skill-pills">
+                                <span>Spring Boot</span><span>PostgreSQL</span>
+                                <span>Gestão Kanban</span><span>Desenvolvimento web</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Jogos e criação visual</h3>
+                            <div class="skill-pills">
+                                <span>Godot</span><span>GameMaker</span>
+                                <span>Blender</span><span>Aseprite</span><span>Affinity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="formacao">
+                <div class="container education-row">
+                    <div>
+                        <p class="eyebrow">06 / Formação</p>
+                        <h2 class="section-title">Aprendizado contínuo.</h2>
+                    </div>
+                    <div class="education-card">
+                        <span class="education-period">Em andamento · previsão 2029</span>
+                        <h3>Bacharelado em Ciência da Computação</h3>
+                        <p>Faculdade São Lucas · 4º período</p>
+                        <p class="education-extra">Inglês — formação Yázigi (2008–2013)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contato">
+            <div class="container footer-content">
+                <div>
+                    <p class="eyebrow">Vamos conversar?</p>
+                    <h2>Tem um projeto em mente?<br><span>Entre em contato.</span></h2>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:pedrohenriquealopes@hotmail.com">pedrohenriquealopes@hotmail.com</a>
+                    <a href="tel:+5569984442008">(69) 98444-2008</a>
+                    <a href="https://github.com/pedropple-droid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/pedropple/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <a class="brand" href="#inicio">PL<span>.</span></a>
+                <p>© 2026 Pedro Lopes. Todos os direitos reservados.</p>
+                <a href="#inicio">Voltar ao topo ↑</a>
+            </div>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
