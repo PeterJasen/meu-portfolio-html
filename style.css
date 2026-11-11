@@ -570,6 +570,13 @@ h1 span,
     color: #1b2430;
 }
 
+.achievement-action-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
 .section-upcoming {
     background: #121b29;
 }
@@ -620,6 +627,10 @@ h1 span,
     font-size: 0.63rem;
     font-weight: 700;
     letter-spacing: 0.07em;
+}
+
+.upcoming-date .upcoming-range {
+    font-size: 0.82rem;
 }
 
 .upcoming-type {
@@ -908,6 +919,15 @@ h1 span,
     .achievement-link {
         grid-column: 2;
         justify-self: start;
+    }
+
+    .achievement-action-links {
+        grid-column: 2;
+        justify-content: flex-start;
+    }
+
+    .achievement-action-links .achievement-link {
+        grid-column: auto;
     }
 
     .upcoming-grid {
